@@ -86,3 +86,122 @@ int main() {
 
     return 0;
 }
+
+void menuMember() 
+{
+    loadMembers();
+    loadItems();
+
+    int choice;
+    
+    printf("========================================================\n");
+    printf("-------------------------- MEMBER ----------------------\n");
+    printf("========================================================\n");
+    printf("2. Ajukan Pinjaman\n");
+    printf("3. Beli Barang Ternak\n");
+    printf("5. Cek Saldo\n");
+    printf("6. Pembayaran\n");
+    printf("7. Keluar\n");
+    printf("Pilih menu: ");
+    scanf("%d", &choice);
+
+    switch (choice)
+    {
+        case 1:
+        //applyLoan();
+        break;
+
+        case 2:
+        //buyItem();
+        break;
+
+        case 3:
+        //checkBalance();
+        break;
+
+        case 4:
+        //makePayment();
+        break;
+
+        case 5:
+        break;
+
+        default:
+        printf("Pilihan tidak valid!\n");
+    }
+}
+
+void employee() 
+{
+    int choice;
+    
+    printf("========================================================\n");
+    printf("------------------------- EMPLOYEE ---------------------\n");
+    printf("========================================================\n");
+    printf("1. Tambah Anggota\n");
+    printf("2. Lihat Anggota\n");
+    printf("3. Lihat Penjualan\n");
+    printf("4. Keluar\n");
+    printf("Pilih menu: ");
+    scanf("%d", &choice);
+    getchar();
+    system("cls");
+
+    switch (choice)
+    {
+        case 1:
+        //addMember();
+        break;
+
+        case 2:
+        //viewMember();
+        break;
+
+        case 3:
+        //income();
+        break;
+
+        case 4:
+        break;
+
+        default:
+        printf("Pilihan tidak valid!\n");
+    }
+}
+
+int main() 
+{
+    system("cls");
+    int choice;
+    
+    printf("========================================================\n");
+    printf("------------------------- COOFARM ----------------------\n");
+    printf("========================================================\n");
+    printf("1. Pegawai\n");
+    printf("2. Pelanggan\n");
+    printf("7. Keluar\n");
+    printf("Pilih menu: ");
+    scanf("%d", &choice);
+    getchar();
+    system("cls");
+
+    switch (choice)
+    {
+        case 1:
+        menuMember();
+        break;
+
+        case 2:
+        employee();
+        break;
+
+        case 3:
+        printf("Good byee!!");
+        system("pause");
+        exit(0);
+        break;
+
+        default:
+        printf("Pilihan tidak valid!\n");
+    }
+}
